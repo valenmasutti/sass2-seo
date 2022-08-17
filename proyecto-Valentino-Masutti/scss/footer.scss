@@ -1,0 +1,19 @@
+.grilla {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+  grid-template-rows: 40vh 100vh 6vh;
+  grid-template-columns: 100%;
+
+  .pie {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    grid-area: footer;
+    border: solid 1px black;
+    border-right: 0px;
+    border-left: 0px;
+  }
+}

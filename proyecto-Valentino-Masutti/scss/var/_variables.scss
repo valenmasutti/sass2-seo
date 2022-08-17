@@ -1,0 +1,20 @@
+$bg-color: #308e32;
+
+// variables inventadas//
+$color-text: white;
+$color-bg: black;
+$color-cream: aqua;
+
+//maps falso ya que no tengo muchas varialbes en mi proyecto, pero lo hago para el desafio//
+$colors: (
+  "color-green": #308e32,
+  "color-text": white,
+  "color-bg": black,
+  "color-cream": aqua,
+);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

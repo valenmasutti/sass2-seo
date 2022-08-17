@@ -1,0 +1,46 @@
+.grilla {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+  grid-template-rows: 40vh 100vh 6vh;
+  grid-template-columns: 100%;
+
+  .main {
+    grid-area: main;
+    background-color: map-get($colors, color-green);
+
+    .contenedormain {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        font-family: "Oswald", sans-serif;
+        margin-top: 60px;
+        color: white;
+      }
+      p {
+        margin-top: 35px;
+        font-size: 22px;
+        color: white;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .imaa {
+        display: flex;
+
+        .imagen {
+          margin-top: 60px;
+          width: 500px;
+        }
+        .imageen {
+          margin-top: 60px;
+          width: 500px;
+          height: 333px;
+        }
+      }
+    }
+  }
+}

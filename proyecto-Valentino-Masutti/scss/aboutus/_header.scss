@@ -1,0 +1,55 @@
+.grilla-aboutus {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main im"
+    "footer footer";
+  grid-template-rows: 40vh 100vh 6vh;
+  grid-template-columns: 60% 40%;
+
+  .contenedor {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(/imagenes/header.png);
+    background-repeat: no-repeat;
+
+    .image {
+      width: 220px;
+      margin-left: 40px;
+      animation: from-right 2.5s ease;
+
+      @keyframes from-right {
+        0% {
+          opacity: 0;
+          transform: translateX(200px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+    }
+  }
+}
+
+nav,
+ul,
+li {
+  display: inline;
+  font-family: "Oswald", sans-serif;
+  list-style: none;
+  padding: 5px;
+  padding-right: 80px;
+
+  a {
+    font-size: large;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  :hover {
+    color: $bg-color;
+  }
+}
